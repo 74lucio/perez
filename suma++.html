@@ -1,0 +1,61 @@
+<html lang="es">
+<head>
+    <title>Suma de Dos Números</title>
+    <script>
+        function sumar() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+    
+            var suma = num1 + num2;
+            
+            document.getElementById("resultado").textContent = "La suma es: " + suma;
+        }
+    </script>
+    <style>
+        
+        body {
+            background-image: url(imagenes/soldado-de-battlefield-2042-7962.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;   
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            height: 100vh; /* Usa toda la altura de la ventana */
+            margin: 0; /* Elimina margenes */
+        }
+        h1 {
+            color: rgb(184, 21, 21);
+            text-align: center;
+        }
+        h2 {
+            color: rgb(5, 141, 28);
+            text-align: center;
+        }
+        .input-container {
+            text-align: center; /* Centra los inputs */
+        }
+    </style>
+</head>
+<body>
+    <table border="6">
+        <tr> 
+         <th><h1>Calculadora de Suma</h1></th> 
+    
+            <th><h2>Introduce dos números para calcular la suma:</h2></th> 
+    
+                <th><div class="input-container">
+                     <th>  <label for="num1">Número 1:</label>
+                        <th> <input type="number" id="num1" required><br><br></th> 
+
+                             <th>  <label for="num2">Número 2:</label></th> 
+                                <th> <input type="number" id="num2" required><br><br></th> 
+        
+                                  <th> <button onclick="sumar()">Calcular Suma</button></th> 
+    </div>
+    
+    <th> <p id="resultado"></p></th> 
+    <tr> 
+</body>
+</html>
